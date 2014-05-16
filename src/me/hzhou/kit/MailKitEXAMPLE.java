@@ -10,12 +10,12 @@ import javax.mail.Transport;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 
-public class MailKit {
+public class MailKitEXAMPLE {
 	
 	public static void send() {
 		 
 		final String username = "no-reply@hzhou.me";
-		final String password = "luyuan950288";
+		final String password = "XXXXX";
  
 		Properties props = new Properties();
 		props.put("mail.smtp.auth", "true");

@@ -11,7 +11,7 @@ import me.hzhou.interceptor.LoginInterceptor;
 /**
  * UserController
  */
-@Before(LoginInterceptor.class)
+//@Before(LoginInterceptor.class)
 public class UserController extends Controller {
 	
 	
@@ -20,9 +20,9 @@ public class UserController extends Controller {
 	 * Display profile page for different roles of users
 	 */
 	public void index() {
-		render("index.html");
+		renderHtml("This is Index Page");
 	}
-	
+/*	
 	@ActionKey("/logout")
     public void logout(){
         removeSessionAttr("user");
@@ -45,7 +45,7 @@ public class UserController extends Controller {
     public void profile(){
         redirect("/user/edit");
     }
-	
+*/
 }
 
 

@@ -6,7 +6,6 @@ import me.hzhou.config.Const;
 import me.hzhou.ext.jfinal.Model;
 import me.hzhou.kit.HtmlTagKit;
 import me.hzhou.kit.SecurityKit;
-import me.hzhou.kit.SendMailKit;
 import me.hzhou.kit.ToolKit;
 import com.jfinal.plugin.ehcache.CacheKit;
 
