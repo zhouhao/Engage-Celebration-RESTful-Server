@@ -55,7 +55,7 @@ public class MyConfig extends JFinalConfig{
 
 
 	public static void main(String[] args) {
-		JFinal.start("WebRoot", 8888, "/", 5);
+		JFinal.start("WebRoot", 8080, "/", 5);
 	}
 
 }

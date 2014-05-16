@@ -29,6 +29,10 @@ public class Engage extends Model<Engage> {
 		return Db.find("select * from wish");
 	}
 	
+	public List<Record> getStat() {
+		return Db.find("select * from keyValue");
+	}
+	
 	private boolean incKeyValue(String whereField){
 		return Db.update("UPDATE keyValue SET itemValue=itemValue+1 WHERE itemKey=?", whereField) > 0 ? true: false;
 	}

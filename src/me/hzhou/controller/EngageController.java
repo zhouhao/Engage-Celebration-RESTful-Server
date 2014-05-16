@@ -30,4 +30,8 @@ public class EngageController extends Controller {
 	public void wishList() {
 		renderJson(Engage.dao.getWishList());
 	}
+	
+	public void showStat(){
+		renderJson(Engage.dao.getStat());
+	}
 }
