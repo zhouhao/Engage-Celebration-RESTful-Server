@@ -7,7 +7,7 @@ package me.hzhou.config;
 public class ConstEXAMPLE {
 
     // MySQL Source Configuration DEV
-    public static final String DEV_JDBC_URL = "jdbc:mysql://server.wpilife.org:3306/emgage?useUnicode=yes&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull";
+    public static final String DEV_JDBC_URL = "jdbc:mysql://server.wpilife.org:3306/engage?useUnicode=yes&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull";
     public static final String DEV_USER = "userName";
     public static final String DEV_PASSWORD = "password";
 
