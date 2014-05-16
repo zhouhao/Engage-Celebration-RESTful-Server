@@ -1,6 +1,7 @@
 package me.hzhou.config;
 
 
+import me.hzhou.handler.GlobalHandler;
 import me.hzhou.model.User;
 import me.hzhou.controller.EngageController;
 import me.hzhou.controller.UserController;
@@ -49,7 +50,7 @@ public class MyConfig extends JFinalConfig{
 	public void configInterceptor(Interceptors me){	}
 	
 	public void configHandler(Handlers me){
-		
+		me.add(new GlobalHandler());
 		
 	}
 

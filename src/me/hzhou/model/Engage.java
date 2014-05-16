@@ -1,6 +1,8 @@
 package me.hzhou.model;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import me.hzhou.kit.ToolKit;
 
@@ -29,8 +31,13 @@ public class Engage extends Model<Engage> {
 		return Db.find("select * from wish");
 	}
 	
-	public List<Record> getStat() {
-		return Db.find("select * from keyValue");
+	public Map<String, Integer> getStat() {
+		List<Record> list = Db.find("select * from keyValue");
+		Map<String, Integer> hm = new HashMap<String, Integer>();
+		for(Record r : list){
+			hm.put(r.getStr("itemKey"), r.getInt("itemValue"));
+		}
+		return hm;
 	}
 	
 	private boolean incKeyValue(String whereField){
