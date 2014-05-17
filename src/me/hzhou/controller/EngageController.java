@@ -20,4 +20,14 @@ public class EngageController extends Controller {
 	public void shanZan() {
 		renderJson(Engage.dao.incZan("shanZan"));
 	}
+	
+	public void addWish() {
+		String name = getPara("name");
+		String wish = getPara("wish");
+		renderJson(Engage.dao.addWish(name, wish));
+	}
+	
+	public void wishList() {
+		renderJson(Engage.dao.getWishList());
+	}
 }
