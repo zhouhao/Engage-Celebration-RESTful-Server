@@ -28,7 +28,7 @@ public class Engage extends Model<Engage> {
 	}
 	
 	public List<Record> getWishList() {
-		return Db.find("select * from wish");
+		return Db.find("SELECT * FROM wish order by id asc");
 	}
 	
 	public Map<String, Integer> getStat() {
