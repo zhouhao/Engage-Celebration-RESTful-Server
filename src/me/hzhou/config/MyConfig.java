@@ -2,6 +2,7 @@ package me.hzhou.config;
 
 
 import me.hzhou.model.User;
+import me.hzhou.controller.EngageController;
 import me.hzhou.controller.UserController;
 
 import com.jfinal.core.JFinal;
@@ -24,7 +25,8 @@ public class MyConfig extends JFinalConfig{
 	}
 	
 	public void configRoute(Routes me){
-		me.add("/user", UserController.class);
+		//me.add("/user", UserController.class);
+		me.add("/engage", EngageController.class);
 	}
 	public void configPlugin(Plugins me){
 		// Configure C3p0 Database connection pool
@@ -40,7 +42,7 @@ public class MyConfig extends JFinalConfig{
 		arp.setShowSql(true);
 		
 		me.add(arp);
-		arp.addMapping("user", "id", User.class);	// Table Mapping
+		//arp.addMapping("user", "id", User.class);	// Table Mapping
 
 	}
 	
@@ -53,7 +55,7 @@ public class MyConfig extends JFinalConfig{
 
 
 	public static void main(String[] args) {
-		JFinal.start("WebRoot", 80, "/", 5);
+		JFinal.start("WebRoot", 8080, "/", 5);
 	}
 
 }
